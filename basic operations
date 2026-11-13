@@ -5,6 +5,14 @@ email VARCHAR(100),
 is_active BOOLEAN
 );
 
+
 SELECT *
 from pg_tables
 WHERE schemaname='public';
+
+
+CREATE TABLE courses(
+id SERIAL primary key,
+title VarChar(100),
+fee Numeric (10,2)
+);
